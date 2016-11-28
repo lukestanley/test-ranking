@@ -1,0 +1,40 @@
+{% load staticfiles %}
+{% load misc_tags %}
+
+<!DOCTYPE html>
+<html lang="en" ng-app="RankingApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Most popular</title>
+
+    <script src="{% static 'static/lib.js' %}"></script>
+    <script src="{% static 'static/ranking.js' %}"></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'static/lib.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'static/ranking.css' %}">
+</head>
+
+{% verbatim %}
+<body ng-controller="RankingController">
+
+
+<div class="container-fluid">
+    <h2>
+        Showing {{ items.length }} items
+    </h2>
+
+    <div class="row">
+
+        <div class="col-sm-12">
+            <div class="item-wrapper" ng-repeat="item in items">
+                {{ item.name }}
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+{% endverbatim %}
+
+</html>

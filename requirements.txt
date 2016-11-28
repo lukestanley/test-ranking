@@ -1,0 +1,7 @@
+beautifulsoup4
+Django
+djangorestframework
+factory-boy
+mock
+numpy
+pytz

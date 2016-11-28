@@ -1,0 +1,19 @@
+# Python
+*.py[cod]
+
+# Installer logs
+pip-log.txt
+
+#IntelliJ
+.idea/
+
+# Misc UNIX Files
+nohup.out
+
+# Database
+db.sqlite3
+
+# Client-side
+npm-debug.log
+ranker/client/node_modules/
+ranker/client/static/lib/
