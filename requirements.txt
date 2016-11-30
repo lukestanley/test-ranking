@@ -4,4 +4,5 @@ djangorestframework
 factory-boy
 mock
 numpy
+Pillow
 pytz
