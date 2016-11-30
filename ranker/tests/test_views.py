@@ -23,4 +23,4 @@ class ItemsApiViewTest(TestCase):
         self.assertEqual(200, response.status_code)
 
         actual = loads(response.content)
-        self.assertEqual(2, len(actual['results']))
+        self.assertEqual(2, len(actual))

@@ -6,4 +6,4 @@ __author__ = 'shillaker'
 def rank_all_items():
     items = Item.objects.order_by('name')
 
-    return items
+    return list(items)

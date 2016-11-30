@@ -9,7 +9,7 @@ rankingApp.controller('RankingController', function ($scope, $http) {
     }).then(success, error);
 
     function success(response) {
-        $scope.items = response.data.results;
+        $scope.items = response.data;
     }
 
     function error(response) {

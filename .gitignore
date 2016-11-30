@@ -17,3 +17,6 @@ db.sqlite3
 npm-debug.log
 ranker/client/node_modules/
 ranker/client/static/lib/
+
+# OSX stuff
+.DS_Store

@@ -6,7 +6,7 @@ from rest_framework.routers import DefaultRouter
 from ranker.views import MainView, ItemViewSet
 
 router = DefaultRouter()
-router.register(r'items', ItemViewSet)
+router.register(r'items', ItemViewSet, base_name='item')
 
 urlpatterns = [
     url(r'^$', MainView.as_view(), name='main'),
