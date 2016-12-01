@@ -13,9 +13,3 @@ def rank_all_items():
     items = sorted(items, key=view_and_wish_sort)
     
     return items
-
-"""
-items = Item.objects.all()
-
-for item in items:
-    print(item)"""
